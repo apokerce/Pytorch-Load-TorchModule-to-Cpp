@@ -35,3 +35,6 @@ $ Change line 29 to your video input
 $ Run the main.cpp code to observe the output
 ```
 
+## Faced Problems.
+#### Class with torc.autograd.Function
+This method is used to calculate the gradients in the traning phase. Since we are going to use the model in eval mode, we can change it to be regular forwarding function. Hence, if you encounter such a problem, convert function accordingly.
